@@ -1,0 +1,7 @@
+source-materials/
+tmp/
+design-concepts/
+scripts/
+node_modules/
+dist/
+.git/

@@ -1,0 +1,814 @@
+{
+  "nextmind": [
+    {
+      "id": "nextmind-01",
+      "name": "ai shot",
+      "originalName": "ai shot.mp4",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI-shots",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/nextmind/media/01.mp4",
+      "size": 57730677
+    },
+    {
+      "id": "nextmind-02",
+      "name": "shots",
+      "originalName": "shots.mp4",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI-shots",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/nextmind/media/02.mp4",
+      "size": 15432806
+    },
+    {
+      "id": "nextmind-03",
+      "name": "shots1",
+      "originalName": "shots1.mp4",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI-shots",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/nextmind/media/03.mp4",
+      "size": 47570687
+    },
+    {
+      "id": "nextmind-04",
+      "name": "shots2",
+      "originalName": "shots2.mp4",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI-shots",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/nextmind/media/04.mp4",
+      "size": 34499387
+    },
+    {
+      "id": "nextmind-05",
+      "name": "AI产品思维导图",
+      "originalName": "AI产品思维导图.jpg",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/nextmind/media/05.webp",
+      "size": 97463
+    },
+    {
+      "id": "nextmind-06",
+      "name": "Copy of 18Senario",
+      "originalName": "Copy of 18Senario.xlsx",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "document",
+      "extension": "XLSX",
+      "url": "/materials/nextmind/files/06.xlsx",
+      "size": 13886
+    },
+    {
+      "id": "nextmind-07",
+      "name": "NextMind Logo",
+      "originalName": "NextMind Logo.pptx",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "document",
+      "extension": "PPTX",
+      "url": "/materials/nextmind/files/07.pptx",
+      "size": 110187
+    },
+    {
+      "id": "nextmind-08",
+      "name": "NextMind Overview",
+      "originalName": "NextMind_Overview.pdf",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "document",
+      "extension": "PDF",
+      "url": "/materials/nextmind/files/08.pdf",
+      "size": 403395
+    },
+    {
+      "id": "nextmind-09",
+      "name": "《演神》功能介绍-V2.5-20260630",
+      "originalName": "《演神》功能介绍-V2.5-20260630.pptx",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "document",
+      "extension": "PPTX",
+      "url": "/materials/nextmind/files/09.pptx",
+      "size": 3529920
+    },
+    {
+      "id": "nextmind-10",
+      "name": "产品支付界面",
+      "originalName": "产品支付界面.jpg",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/nextmind/media/10.webp",
+      "size": 139804
+    },
+    {
+      "id": "nextmind-11",
+      "name": "产品链接二维码",
+      "originalName": "产品链接二维码.jpg",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI产品",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/nextmind/media/11.webp",
+      "size": 15570
+    },
+    {
+      "id": "nextmind-12",
+      "name": "Cross the stream..",
+      "originalName": "Cross the stream...docx",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI宣传片",
+      "kind": "document",
+      "extension": "DOCX",
+      "url": "/materials/nextmind/files/12.docx",
+      "size": 16308
+    },
+    {
+      "id": "nextmind-13",
+      "name": "Cross the stream NextMind 宣传片分镜方案",
+      "originalName": "Cross_the_stream_NextMind_宣传片分镜方案.docx",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI宣传片",
+      "kind": "document",
+      "extension": "DOCX",
+      "url": "/materials/nextmind/files/13.docx",
+      "size": 41255
+    },
+    {
+      "id": "nextmind-14",
+      "name": "NextMind",
+      "originalName": "NextMind.mp4",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI宣传片",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/nextmind/media/14.mp4",
+      "size": 222389190
+    },
+    {
+      "id": "nextmind-15",
+      "name": "公司产品宣传图",
+      "originalName": "公司产品宣传图.jpg",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI宣传片",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/nextmind/media/15.webp",
+      "size": 102823
+    },
+    {
+      "id": "nextmind-16",
+      "name": "无配音",
+      "originalName": "无配音.mp4",
+      "sourceGroup": "AI产品项目-NextMind Slides / AI宣传片",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/nextmind/media/16.mp4",
+      "size": 221417613
+    },
+    {
+      "id": "nextmind-17",
+      "name": "今日会议总结",
+      "originalName": "今日会议总结.docx",
+      "sourceGroup": "AI产品项目-NextMind Slides / 工作日志",
+      "kind": "document",
+      "extension": "DOCX",
+      "url": "/materials/nextmind/files/17.docx",
+      "size": 14392
+    },
+    {
+      "id": "nextmind-18",
+      "name": "今日生成+提示词",
+      "originalName": "今日生成+提示词.pptx",
+      "sourceGroup": "AI产品项目-NextMind Slides / 工作日志",
+      "kind": "document",
+      "extension": "PPTX",
+      "url": "/materials/nextmind/files/18.pptx",
+      "size": 17904906
+    },
+    {
+      "id": "nextmind-19",
+      "name": "周报-次央拉姆",
+      "originalName": "周报-次央拉姆.xlsx",
+      "sourceGroup": "AI产品项目-NextMind Slides / 工作日志",
+      "kind": "document",
+      "extension": "XLSX",
+      "url": "/materials/nextmind/files/19.xlsx",
+      "size": 15610
+    },
+    {
+      "id": "nextmind-20",
+      "name": "宣传片1",
+      "originalName": "宣传片1.pptx",
+      "sourceGroup": "AI产品项目-NextMind Slides / 工作日志",
+      "kind": "document",
+      "extension": "PPTX",
+      "url": "/materials/nextmind/files/20.pptx",
+      "size": 34709187
+    },
+    {
+      "id": "nextmind-21",
+      "name": "第二幕",
+      "originalName": "第二幕.pptx",
+      "sourceGroup": "AI产品项目-NextMind Slides / 工作日志",
+      "kind": "document",
+      "extension": "PPTX",
+      "url": "/materials/nextmind/files/21.pptx",
+      "size": 79866587
+    }
+  ],
+  "chocolate": [
+    {
+      "id": "chocolate-01",
+      "name": "雪域“纯”香",
+      "originalName": "雪域“纯”香.mp4",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / AI宣传视频",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/chocolate/media/01.mp4",
+      "size": 23924794
+    },
+    {
+      "id": "chocolate-02",
+      "name": "专利证明",
+      "originalName": "专利证明.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 专利证书",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/02.webp",
+      "size": 156080
+    },
+    {
+      "id": "chocolate-03",
+      "name": "商标",
+      "originalName": "商标.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 专利证书",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/03.webp",
+      "size": 6959
+    },
+    {
+      "id": "chocolate-04",
+      "name": "外观1.0",
+      "originalName": "外观1.0.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 专利证书",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/04.webp",
+      "size": 28427
+    },
+    {
+      "id": "chocolate-05",
+      "name": "外观2.0",
+      "originalName": "外观2.0.png",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 专利证书",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/chocolate/media/05.webp",
+      "size": 2233134
+    },
+    {
+      "id": "chocolate-06",
+      "name": "巧克力图",
+      "originalName": "巧克力图.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 产品图",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/06.webp",
+      "size": 5598149
+    },
+    {
+      "id": "chocolate-07",
+      "name": "创新创业省级优秀结项证书",
+      "originalName": "创新创业省级优秀结项证书.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/07.webp",
+      "size": 169204
+    },
+    {
+      "id": "chocolate-08",
+      "name": "chunxiang",
+      "originalName": "chunxiang.html",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 官方网站链接",
+      "kind": "document",
+      "extension": "HTML",
+      "url": "/materials/chocolate/files/08.html",
+      "size": 2889
+    },
+    {
+      "id": "chocolate-09",
+      "name": "国际宣传图1",
+      "originalName": "国际宣传图1.png",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 海报宣传图",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/chocolate/media/09.webp",
+      "size": 2641254
+    },
+    {
+      "id": "chocolate-10",
+      "name": "国际宣传图2",
+      "originalName": "国际宣传图2.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 海报宣传图",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/10.webp",
+      "size": 163854
+    },
+    {
+      "id": "chocolate-11",
+      "name": "宣传图2",
+      "originalName": "宣传图2.png",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 海报宣传图",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/chocolate/media/11.webp",
+      "size": 2163271
+    },
+    {
+      "id": "chocolate-12",
+      "name": "手绘海报",
+      "originalName": "手绘海报.pdf",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 海报宣传图",
+      "kind": "document",
+      "extension": "PDF",
+      "url": "/materials/chocolate/files/12.pdf",
+      "size": 294921
+    },
+    {
+      "id": "chocolate-13",
+      "name": "青稞β-葡聚糖功能构效与低脂巧克力市场适配性研究",
+      "originalName": "青稞β-葡聚糖功能构效与低脂巧克力市场适配性研究.pdf",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 研究论文",
+      "kind": "document",
+      "extension": "PDF",
+      "url": "/materials/chocolate/files/13.pdf",
+      "size": 308740
+    },
+    {
+      "id": "chocolate-14",
+      "name": "内测测评",
+      "originalName": "内测测评.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 运营",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/14.webp",
+      "size": 110660
+    },
+    {
+      "id": "chocolate-15",
+      "name": "抖音官方账号",
+      "originalName": "抖音官方账号.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 运营",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/15.webp",
+      "size": 293208
+    },
+    {
+      "id": "chocolate-16",
+      "name": "问卷调查",
+      "originalName": "问卷调查.png",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 运营",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/chocolate/media/16.webp",
+      "size": 137806
+    },
+    {
+      "id": "chocolate-17",
+      "name": "问卷调查2",
+      "originalName": "问卷调查2.png",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 运营",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/chocolate/media/17.webp",
+      "size": 52094
+    },
+    {
+      "id": "chocolate-18",
+      "name": "买家1",
+      "originalName": "买家1.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 部分买家反馈",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/18.webp",
+      "size": 163074
+    },
+    {
+      "id": "chocolate-19",
+      "name": "买家2",
+      "originalName": "买家2.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 部分买家反馈",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/19.webp",
+      "size": 150793
+    },
+    {
+      "id": "chocolate-20",
+      "name": "买家3",
+      "originalName": "买家3.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 部分买家反馈",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/20.webp",
+      "size": 159186
+    },
+    {
+      "id": "chocolate-21",
+      "name": "买家4",
+      "originalName": "买家4.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 部分买家反馈",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/21.webp",
+      "size": 205492
+    },
+    {
+      "id": "chocolate-22",
+      "name": "买家5",
+      "originalName": "买家5.jpg",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 部分买家反馈",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/chocolate/media/22.webp",
+      "size": 231187
+    },
+    {
+      "id": "chocolate-23",
+      "name": "醇香乡愿：基于区块链的雪域巧克力电商平台，激发乡村振兴新动能",
+      "originalName": "醇香乡愿：基于区块链的雪域巧克力电商平台，激发乡村振兴新动能.pdf",
+      "sourceGroup": "项目-雪域“纯” 香巧克力的互联网之旅——实现农产品与科技交互 / 项目书",
+      "kind": "document",
+      "extension": "PDF",
+      "url": "/materials/chocolate/files/23.pdf",
+      "size": 2688151
+    }
+  ],
+  "vpc": [
+    {
+      "id": "vpc-01",
+      "name": "VPC荣誉证书",
+      "originalName": "VPC荣誉证书.jpg",
+      "sourceGroup": "VPC虚拟制作大赛-项目",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/vpc/media/01.webp",
+      "size": 245312
+    },
+    {
+      "id": "vpc-02",
+      "name": "《赫尔墨斯IV-最后的观测者》",
+      "originalName": "《赫尔墨斯IV-最后的观测者》.mp4",
+      "sourceGroup": "VPC虚拟制作大赛-项目",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/vpc/media/02.mp4",
+      "size": 19798101
+    }
+  ],
+  "yoyo": [
+    {
+      "id": "yoyo-01",
+      "name": "IP获奖证书",
+      "originalName": "IP获奖证书.jpg",
+      "sourceGroup": "IP项目-YOYO",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/yoyo/media/01.webp",
+      "size": 407018
+    },
+    {
+      "id": "yoyo-02",
+      "name": "YOYO三视图",
+      "originalName": "YOYO三视图.jpg",
+      "sourceGroup": "IP项目-YOYO",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/yoyo/media/02.webp",
+      "size": 549534
+    },
+    {
+      "id": "yoyo-03",
+      "name": "YOYO周边",
+      "originalName": "YOYO周边.jpg",
+      "sourceGroup": "IP项目-YOYO",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/yoyo/media/03.webp",
+      "size": 419066
+    },
+    {
+      "id": "yoyo-04",
+      "name": "YOYO表情包系列",
+      "originalName": "YOYO表情包系列.jpg",
+      "sourceGroup": "IP项目-YOYO",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/yoyo/media/04.webp",
+      "size": 269339
+    },
+    {
+      "id": "yoyo-05",
+      "name": "成都ip联动",
+      "originalName": "成都ip联动.jpg",
+      "sourceGroup": "IP项目-YOYO",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/yoyo/media/05.webp",
+      "size": 170264
+    },
+    {
+      "id": "yoyo-06",
+      "name": "罗森巧克力主题联动",
+      "originalName": "罗森巧克力主题联动.jpg",
+      "sourceGroup": "IP项目-YOYO",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/yoyo/media/06.webp",
+      "size": 174009
+    }
+  ],
+  "antifraud": [
+    {
+      "id": "antifraud-01",
+      "name": "01",
+      "originalName": "01.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/01.webp",
+      "size": 572746
+    },
+    {
+      "id": "antifraud-02",
+      "name": "02",
+      "originalName": "02.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/02.webp",
+      "size": 267357
+    },
+    {
+      "id": "antifraud-03",
+      "name": "03",
+      "originalName": "03.png",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/antifraud/media/03.webp",
+      "size": 2814704
+    },
+    {
+      "id": "antifraud-04",
+      "name": "04",
+      "originalName": "04.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/04.webp",
+      "size": 328878
+    },
+    {
+      "id": "antifraud-05",
+      "name": "05",
+      "originalName": "05.png",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/antifraud/media/05.webp",
+      "size": 2888200
+    },
+    {
+      "id": "antifraud-06",
+      "name": "06",
+      "originalName": "06.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/06.webp",
+      "size": 294721
+    },
+    {
+      "id": "antifraud-07",
+      "name": "07",
+      "originalName": "07.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/07.webp",
+      "size": 308560
+    },
+    {
+      "id": "antifraud-08",
+      "name": "08",
+      "originalName": "08.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/08.webp",
+      "size": 385848
+    },
+    {
+      "id": "antifraud-09",
+      "name": "09",
+      "originalName": "09.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/09.webp",
+      "size": 371231
+    },
+    {
+      "id": "antifraud-10",
+      "name": "10",
+      "originalName": "10.png",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/antifraud/media/10.webp",
+      "size": 3304310
+    },
+    {
+      "id": "antifraud-11",
+      "name": "11",
+      "originalName": "11.png",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "PNG",
+      "url": "/materials/antifraud/media/11.webp",
+      "size": 3453408
+    },
+    {
+      "id": "antifraud-12",
+      "name": "12",
+      "originalName": "12.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/12.webp",
+      "size": 416406
+    },
+    {
+      "id": "antifraud-13",
+      "name": "13",
+      "originalName": "13.jpeg",
+      "sourceGroup": "数技231次央拉姆-2320130130 / photo",
+      "kind": "image",
+      "extension": "JPEG",
+      "url": "/materials/antifraud/media/13.webp",
+      "size": 452185
+    },
+    {
+      "id": "antifraud-14",
+      "name": "脚本",
+      "originalName": "脚本.jpg",
+      "sourceGroup": "数技231次央拉姆-2320130130",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/antifraud/media/14.webp",
+      "size": 1738491
+    },
+    {
+      "id": "antifraud-15",
+      "name": "视频",
+      "originalName": "视频.mp4",
+      "sourceGroup": "数技231次央拉姆-2320130130",
+      "kind": "video",
+      "extension": "MP4",
+      "url": "/materials/antifraud/media/15.mp4",
+      "size": 91887033
+    }
+  ],
+  "hobbies": [
+    {
+      "id": "hobbies-01",
+      "name": "多蒂",
+      "originalName": "多蒂.jpg",
+      "sourceGroup": "个人爱好 / 板绘",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/01.webp",
+      "size": 192657
+    },
+    {
+      "id": "hobbies-02",
+      "name": "梦核",
+      "originalName": "梦核.jpg",
+      "sourceGroup": "个人爱好 / 板绘",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/02.webp",
+      "size": 257293
+    },
+    {
+      "id": "hobbies-03",
+      "name": "歌剧演员",
+      "originalName": "歌剧演员.jpg",
+      "sourceGroup": "个人爱好 / 板绘",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/03.webp",
+      "size": 2354307
+    },
+    {
+      "id": "hobbies-04",
+      "name": "爱丽丝主题",
+      "originalName": "爱丽丝主题.jpg",
+      "sourceGroup": "个人爱好 / 板绘",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/04.webp",
+      "size": 3540549
+    },
+    {
+      "id": "hobbies-05",
+      "name": "美国精神病人",
+      "originalName": "美国精神病人.jpg",
+      "sourceGroup": "个人爱好 / 板绘",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/05.webp",
+      "size": 2167704
+    },
+    {
+      "id": "hobbies-06",
+      "name": "调香师",
+      "originalName": "调香师.jpg",
+      "sourceGroup": "个人爱好 / 板绘",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/06.webp",
+      "size": 2598063
+    },
+    {
+      "id": "hobbies-07",
+      "name": "冰皮月饼",
+      "originalName": "冰皮月饼.jpg",
+      "sourceGroup": "个人爱好 / 烘焙",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/07.webp",
+      "size": 220136
+    },
+    {
+      "id": "hobbies-08",
+      "name": "巴斯克",
+      "originalName": "巴斯克.jpg",
+      "sourceGroup": "个人爱好 / 烘焙",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/08.webp",
+      "size": 114960
+    },
+    {
+      "id": "hobbies-09",
+      "name": "恰巴塔",
+      "originalName": "恰巴塔.jpg",
+      "sourceGroup": "个人爱好 / 烘焙",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/09.webp",
+      "size": 275003
+    },
+    {
+      "id": "hobbies-10",
+      "name": "提拉米苏",
+      "originalName": "提拉米苏.jpg",
+      "sourceGroup": "个人爱好 / 烘焙",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/10.webp",
+      "size": 79796
+    },
+    {
+      "id": "hobbies-11",
+      "name": "西多士",
+      "originalName": "西多士.jpg",
+      "sourceGroup": "个人爱好 / 烘焙",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/11.webp",
+      "size": 108156
+    },
+    {
+      "id": "hobbies-12",
+      "name": "沙滩车",
+      "originalName": "沙滩车.jpg",
+      "sourceGroup": "个人爱好 / 运动",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/12.webp",
+      "size": 1005916
+    },
+    {
+      "id": "hobbies-13",
+      "name": "骑行",
+      "originalName": "骑行.jpg",
+      "sourceGroup": "个人爱好 / 运动",
+      "kind": "image",
+      "extension": "JPG",
+      "url": "/materials/hobbies/media/13.webp",
+      "size": 461278
+    }
+  ]
+}
