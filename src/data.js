@@ -2,7 +2,7 @@ import materials from './materials.json'
 
 const asset = (group, id) => materials[group].find((item) => item.id === id)?.url
 
-export const projects = [
+const projectCatalog = [
   {
     id: 'mychat',
     index: '01',
@@ -220,6 +220,13 @@ export const projects = [
     },
   },
 ]
+
+const projectOrder = ['nextmind', 'mychat', 'chocolate', 'vpc', 'yoyo', 'antifraud']
+
+export const projects = projectOrder.map((id, position) => ({
+  ...projectCatalog.find((project) => project.id === id),
+  index: String(position + 1).padStart(2, '0'),
+}))
 
 export const featuredProjects = projects.slice(0, 3)
 export const moreProjects = projects.slice(3)

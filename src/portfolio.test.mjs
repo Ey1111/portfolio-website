@@ -44,6 +44,17 @@ test('My Chat is featured with a full case study and GitHub handoff', () => {
   assert.match(renderToStaticMarkup(React.createElement(ProjectModal, { project, onClose() {} })), /查看 GitHub 仓库/)
 })
 
+test('featured projects follow the HR-first priority order', () => {
+  assert.deepEqual(
+    projects.slice(0, 3).map(({ id, index }) => ({ id, index })),
+    [
+      { id: 'nextmind', index: '01' },
+      { id: 'mychat', index: '02' },
+      { id: 'chocolate', index: '03' },
+    ],
+  )
+})
+
 test('hobbies preserve all supplied works across drawing, baking and sports', () => {
   assert.deepEqual(hobbies.map((group) => group.title), [
     '板绘 / 视觉叙事',
