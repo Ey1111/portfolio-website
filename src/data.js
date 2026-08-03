@@ -4,8 +4,53 @@ const asset = (group, id) => materials[group].find((item) => item.id === id)?.ur
 
 export const projects = [
   {
-    id: 'nextmind',
+    id: 'mychat',
     index: '01',
+    title: 'My Chat',
+    role: 'AI 产品设计与全栈开发 · 独立项目',
+    period: '2026.08',
+    summary: '从 0 到 1 搭建面向多 Agent 的本地 AI 工作台，把模型选择、会话管理、权限确认与数据持久化整合进一套可运行的产品原型。',
+    evidence: ['React + TypeScript', 'Express + SQLite', 'Agent 配置与权限控制', 'GitHub 工程化交付'],
+    lead: { type: 'image', src: '/assets/my-chat.png' },
+    github: 'https://github.com/Ey1111/my-chat',
+    assets: [
+      { id: 'mychat-ui', kind: 'image', url: '/assets/my-chat.png', name: 'My Chat 产品界面', sourceGroup: 'My Chat' },
+    ],
+    caseStudy: {
+      background: '通用聊天工具往往把模型、提示词、会话和权限分散在不同入口。My Chat 从个人高频使用场景出发，尝试把“选择 Agent—配置工作目录—发起任务—处理工具权限—沉淀会话”组织成一条连续流程，让 AI 不只回答问题，也能成为可配置、可追踪的工作助手。',
+      challenge: '项目同时涉及产品信息架构、复杂对话状态、前后端通信、本地数据库与第三方 Agent SDK。关键约束是：既要让首次使用足够简单，又要保留模型、权限模式、工作目录和多 Agent 等专业配置；同时避免密钥、聊天记录与本地环境文件进入公开代码。',
+      role: '独立完成产品定义、交互结构、界面实现与工程整理。使用 React + TypeScript 构建前端，以 Express 承载服务接口、SQLite 保存会话数据，并接入腾讯 Agent SDK；同时建立 Git 忽略规则、敏感信息扫描与 GitHub 版本管理流程。',
+      goals: [
+        '将 Agent、模型、会话、权限与工作目录整合为清晰的核心工作流。',
+        '建立可扩展的数据与组件结构，为后续增加模型、工具和 Agent 模板保留空间。',
+        '完成可复用的本地开发原型，并以安全、可追踪的方式交付到 GitHub。',
+      ],
+      timeline: [
+        { step: '01', title: '定义问题', text: '梳理个人使用 AI Agent 时在配置、切换、授权与历史追踪上的断点，明确“本地多 Agent 工作台”的产品边界。' },
+        { step: '02', title: '设计架构', text: '拆分侧边栏、会话页、Agent 配置、模型选择、权限确认和设置页，建立前端状态与后端接口的对应关系。' },
+        { step: '03', title: '实现闭环', text: '完成 React/TypeScript 前端、Express 服务和 SQLite 会话持久化，接入 Agent SDK 并串联新建会话到消息返回的主流程。' },
+        { step: '04', title: '处理风险', text: '把 API 密钥、本地数据库、聊天记录、依赖目录与生成文件纳入忽略规则，并在提交前进行敏感信息和大文件扫描。' },
+        { step: '05', title: '版本交付', text: '整理 README 与开发文档，建立 main 分支和首个版本提交，将 36 个源码与文档文件安全推送到 GitHub。' },
+      ],
+      decisions: [
+        { title: '让 Agent 成为一级对象', text: '不是把所有能力堆进一个聊天框，而是让每个 Agent 拥有独立提示词、工作目录和使用场景，降低切换任务时的认知成本。' },
+        { title: '权限确认进入对话流', text: '将工具调用授权设计为可见、可选择的交互节点，让用户知道 AI 准备执行什么，并保留人工判断。' },
+        { title: '本地数据与代码仓库隔离', text: 'SQLite 只承担本地会话持久化；仓库只提交源码、配置模板和文档，避免聊天内容与密钥随代码传播。' },
+      ],
+      outcomes: [
+        '完成覆盖新建会话、Agent 配置、模型选择、权限模式、历史会话与设置页的开发原型。',
+        '形成 React + TypeScript、Express、SQLite 与 Agent SDK 协同的前后端结构，并保留后续扩展接口。',
+        '代码已提交至 GitHub 私有仓库，远端 main 与本地提交一致，隐私数据和依赖文件均未上传。',
+      ],
+      learnings: [
+        'AI 产品的关键不只是接入模型，而是把配置、授权、反馈和历史记录设计成用户可理解的控制面。',
+        '从原型走向可交付项目时，版本管理、隐私边界、文档与构建质量同样属于产品完整度。',
+      ],
+    },
+  },
+  {
+    id: 'nextmind',
+    index: '02',
     title: 'NextMind Slides',
     role: 'AI 产品视觉与内容 · 视觉设计实习生',
     period: '2026.06 — 至今',
@@ -47,7 +92,7 @@ export const projects = [
   },
   {
     id: 'chocolate',
-    index: '02',
+    index: '03',
     title: '雪域“纯”香',
     role: '项目负责人 · 省级创新创业训练计划',
     period: '2024.04 — 2025.05',
@@ -89,7 +134,7 @@ export const projects = [
   },
   {
     id: 'vpc',
-    index: '03',
+    index: '04',
     title: '赫尔墨斯 IV',
     role: 'VPC 项目负责人',
     period: '2025.03 — 2025.05',
@@ -118,7 +163,7 @@ export const projects = [
   },
   {
     id: 'yoyo',
-    index: '04',
+    index: '05',
     title: 'YOYO IP',
     role: 'IP 设计与商业联动',
     period: '2025',
@@ -147,7 +192,7 @@ export const projects = [
   },
   {
     id: 'antifraud',
-    index: '05',
+    index: '06',
     title: '反诈宣传',
     role: 'AIGC 公益内容',
     period: '2024',

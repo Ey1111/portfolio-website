@@ -13,6 +13,7 @@ after(async () => {
 })
 
 const expectedAssetCounts = {
+  mychat: 1,
   nextmind: 21,
   yoyo: 6,
   vpc: 2,
@@ -21,7 +22,7 @@ const expectedAssetCounts = {
 }
 
 test('every project exposes a complete zero-to-one case and every supplied artifact', () => {
-  assert.equal(projects.length, 5)
+  assert.equal(projects.length, 6)
 
   for (const project of projects) {
     assert.ok(project.caseStudy.background)
@@ -32,6 +33,15 @@ test('every project exposes a complete zero-to-one case and every supplied artif
     assert.ok(project.caseStudy.learnings.length >= 1)
     assert.equal(project.assets.length, expectedAssetCounts[project.id])
   }
+})
+
+test('My Chat is featured with a full case study and GitHub handoff', () => {
+  const project = projects.find((item) => item.id === 'mychat')
+  assert.ok(project)
+  assert.equal(project.github, 'https://github.com/Ey1111/my-chat')
+  assert.equal(project.caseStudy.timeline.length, 5)
+  assert.equal(project.caseStudy.decisions.length, 3)
+  assert.match(renderToStaticMarkup(React.createElement(ProjectModal, { project, onClose() {} })), /查看 GitHub 仓库/)
 })
 
 test('hobbies preserve all supplied works across drawing, baking and sports', () => {
@@ -45,7 +55,7 @@ test('hobbies preserve all supplied works across drawing, baking and sports', ()
 
 test('detailed case exposes process and complete archive controls', () => {
   const html = renderToStaticMarkup(React.createElement(ProjectModal, {
-    project: projects[0],
+    project: projects.find((item) => item.id === 'nextmind'),
     onClose() {},
   }))
   assert.match(html, /从 0 到 1/)

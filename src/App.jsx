@@ -160,7 +160,7 @@ function Capabilities() {
     <section className="capabilities page-grid section-rule">
       <Reveal className="section-label"><span>05</span><h2>能力坐标</h2></Reveal>
       <div className="capability-list">{capabilities.map((item, index) => <Reveal key={item} className="capability"><span>0{index + 1}</span><strong>{item}</strong></Reveal>)}</div>
-      <Reveal className="tools-line"><span>TOOLS</span><p>ChatGPT / Claude / Midjourney / Stable Diffusion / UE5 / Unity / Blender / Figma / AE</p></Reveal>
+      <Reveal className="tools-line"><span>TOOLS</span><p>ChatGPT / Claude / React / TypeScript / Express / SQLite / GitHub / UE5 / Blender / Figma / AE</p></Reveal>
     </section>
   )
 }
@@ -235,7 +235,7 @@ export function ProjectModal({ project, onClose, onView = () => {} }) {
     <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label={`${project.title} 案例详情`}>
       <article className="case-modal">
         <header className="case-nav"><span>{project.index} / CASE STUDY</span><button onClick={onClose}>关闭</button></header>
-        <div className="case-hero"><div><span>{project.role}</span><h2>{project.title}</h2></div><p>{project.summary}</p></div>
+        <div className="case-hero"><div><span>{project.role}</span><h2>{project.title}</h2></div><div><p>{project.summary}</p>{project.github && <a className="github-link" href={project.github} target="_blank" rel="noreferrer">查看 GitHub 仓库 <ArrowIcon /></a>}</div></div>
         <div className="case-lead"><LeadMedia project={project} /></div>
         <div className="case-overview">
           <section><h3>项目背景</h3><p>{caseStudy.background}</p></section>
