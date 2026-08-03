@@ -2,6 +2,7 @@ source-materials/
 tmp/
 design-concepts/
 scripts/
+resume_work/
 node_modules/
 dist/
 .git/
