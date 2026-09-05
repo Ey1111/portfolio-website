@@ -82,12 +82,28 @@ test('homepage makes the internship, AI-native skill stack and high-resolution p
   assert.match(html, /<figcaption><span>2027 届 · 数字媒体技术<\/span><\/figcaption>/)
   assert.match(html, /上海移品信息技术有限公司/)
   assert.match(html, /NextMind Slides/)
-  assert.match(html, /AI 产品视觉与内容/)
+  assert.match(html, /AI 产品（视觉设计方向）实习生/)
   assert.match(html, /2026\.06—至今/)
   assert.match(html, /LLM \/ Agent 产品设计/)
   assert.match(html, /Prompt \/ Context \/ Structured Output/)
   assert.match(html, /AI 评测与 Bad Case/)
   assert.match(html, /SQL \/ SQLite \/ D1 \/ PostgreSQL/)
+})
+
+test('homepage reflects the latest 2027 resume evidence and AI product delivery method', () => {
+  const html = renderToStaticMarkup(React.createElement(App))
+  const ancilla = projects.find(project => project.id === 'ancilla')
+  const sentinel = projects.find(project => project.id === 'sentinel')
+  const nextmind = projects.find(project => project.id === 'nextmind')
+
+  assert.match(html, /三个独立 AI 产品/)
+  assert.match(html, /Spec → Agent → Test → Review → Human Acceptance/)
+  assert.match(html, /AI 产品（视觉设计方向）实习生/)
+  assert.match(html, /6 版方案与 4 轮迭代/)
+  assert.match(html, /Free、Plus、Pro、Enterprise/)
+  assert.match(ancilla.caseStudy.evidence.join(' '), /69 项自动化测试/)
+  assert.match(sentinel.caseStudy.evidence.join(' '), /20 项集成测试/)
+  assert.match(nextmind.caseStudy.evidence.join(' '), /V2\.5/)
 })
 
 test('Ancilla quick actions expose both the live product and downloadable Lens package before opening the case', () => {

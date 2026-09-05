@@ -49,8 +49,8 @@ function Hero() {
     <div className="hero-layout">
       <div className="hero-copy">
         <h1 aria-label="你好，我是次央拉姆"><span>你好，我是</span><span>次央拉姆。</span></h1>
-        <p className="hero-lead">AI 产品经理候选人，关注可信、可验证的 AI 产品体验。</p>
-        <p className="hero-body">我把模糊问题整理成清晰的产品判断、PRD 与交互原型，再用数据、真实界面和测试证据验证它。比起“AI 能做什么”，我更在意人在哪里做决定，失败时产品如何诚实回应。</p>
+        <p className="hero-lead">2027 届产品经理候选人，专注可信、可验证的 AI 产品体验。</p>
+        <p className="hero-body">我独立推进三个 AI 产品从问题定义走向可验证交付：把模糊需求整理成产品判断、PRD 与交互，再用 Agent 工作流、数据和测试证据证明它真的能运行。</p>
       </div>
       <figure className="hero-portrait">
         <img src="/assets/profile-hires.webp" alt="次央拉姆高清职业照片" />
@@ -117,10 +117,10 @@ function Resources() {
 
 function About() {
   const strengths = [
-    '能从需求分析、PRD、交互原型推进到可运行 MVP，并明确实现、原型与规划边界。',
-    '能区分规则引擎与大模型的适用边界，坚持 Human-in-the-loop，由人保留最终决策权。',
-    '具备 DeepSeek API、Prompt、结构化输出和异常流程设计经验，能与研发沟通接口、权限与状态。',
-    '有复杂项目推进经验：带领 5 人团队完成省级项目，并在实习中推动产品内容与宣传片交付。',
+    '三个独立 AI 产品 0→1：覆盖业务分析、MVP 取舍、Agent 工作流、原型开发、测试验收与部署验证。',
+    '能从用户痛点、业务价值和实现成本出发，判断规则、模型、Agent 与人工决策的适用边界。',
+    '采用 Spec → Agent → Test → Review → Human Acceptance 流程，用验收标准、自动化测试和证据留存约束 AI 产出。',
+    '带领 5 人跨专业团队推进 13 个月并获省级优秀结项；实习中 20 天推动内容从需求到上线，统筹 15 个版本与 8 轮评审。',
   ]
   const skillGroups = [
     { label: 'PRODUCT', title: '产品与研究', skills: [
@@ -143,10 +143,10 @@ function About() {
   ]
   return <section id="about" className="about page-shell">
     <Reveal className="about-title"><span>04 / About</span><h2>在技术、内容与用户之间，<br />把模糊问题变成可行动的产品。</h2></Reveal>
-    <Reveal className="about-profile"><img src="/assets/profile-hires.webp" alt="次央拉姆高清职业照片" /><div><p>我是次央拉姆，大连工业大学数字媒体技术专业 2027 届学生，求职方向为 AI 产品经理。我的优势不只是写 PRD 或调用模型，而是把真实问题拆成产品范围、交互流程、AI 与规则边界，以及可验证的数据闭环。我关注 Human-in-the-loop、结构化输出、失败降级和证据可追溯，也能进入 API、数据库与前端实现细节，推动方案形成可运行交付。</p><dl><div><dt>工作方式</dt><dd>问题定义 → PRD → 交互 → AI / 数据闭环 → 验证复盘</dd></div><div><dt>求职方向</dt><dd>AI 产品经理 / AI Native 产品方向</dd></div></dl></div></Reveal>
+    <Reveal className="about-profile"><img src="/assets/profile-hires.webp" alt="次央拉姆高清职业照片" /><div><p>我是次央拉姆，大连工业大学数字媒体技术专业 2027 届学生，求职方向为产品经理。已独立推进航益智审、Origin Brand AI 与 Sentinel 三个 AI 产品，覆盖问题定义、MVP 取舍、Agent 工作流、原型开发、测试验收与部署验证。我能进入 API、数据库和前端实现细节，但更重视规则、模型与人工决策的边界，以及结果能否被复核、追溯和交付。</p><dl><div><dt>工作方式</dt><dd>问题定义 → PRD → 交互 → AI / 数据闭环 → 验证复盘</dd></div><div><dt>求职方向</dt><dd>产品经理 / AI 产品方向</dd></div></dl></div></Reveal>
     <Reveal className="experience">
       <div className="experience-label"><span>INTERNSHIP</span><h3>实习经历</h3></div>
-      <div className="experience-main"><div className="experience-head"><div><strong>上海移品信息技术有限公司 · NextMind Slides</strong><p>AI 产品视觉与内容 / 视觉设计实习生</p></div><time>2026.06—至今</time></div><ul><li>梳理 20+ 项 AI 演示能力与 18 类场景，形成统一信息架构和产品表达。</li><li>推动宣传片从需求、分镜、Prompt 迭代、生成 / 实拍到评审与多平台发布。</li><li>将复杂能力转译为产品文档、场景语言和品牌内容，连接产品理解与用户传播。</li></ul></div>
+      <div className="experience-main"><div className="experience-head"><div><strong>上海移品信息技术有限公司 · NextMind LLC</strong><p>AI 产品（视觉设计方向）实习生</p></div><time>2026.06—至今</time></div><ul><li>将提示增强、需求澄清、Text2Deck、智能提纲、Context2Image、模板融合等 20+ 项功能归纳为 5 类产品能力，推动《产品功能》迭代至 V2.5。</li><li>梳理投标、融资路演、高管汇报、市场研究和产品发布等 18 类场景，定义目标用户、核心任务、内容顺序与标准页面结构。</li><li>从准确性、结构完整性、表达一致性和场景匹配度走查 AI 生成结果，以 Prompt、版本和失败案例台账跟踪 6 版方案与 4 轮迭代。</li><li>参与 Free、Plus、Pro、Enterprise 四档方案及官网定价页梳理，把抽象能力转译为场景、价值主张与版本差异。</li></ul></div>
     </Reveal>
     <div className="strengths"><h3>个人优势</h3>{strengths.map((item, index) => <Reveal className="strength" key={item}><span>0{index + 1}</span><p>{item}</p></Reveal>)}</div>
     <div className="capability-map"><header><span>AI NATIVE SKILL SET</span><h3>能力不是关键词，<br />而是一套交付链路。</h3><p>从洞察、判断和产品设计，到模型编排、评测、数据与上线验证。</p></header>{skillGroups.map((group, groupIndex) => <Reveal className="capability-group" key={group.label}><div className="capability-label"><span>0{groupIndex + 1} / {group.label}</span><h4>{group.title}</h4></div><div className="skill-list">{group.skills.map(([name, detail]) => <div className="skill-row" key={name}><strong>{name}</strong><p>{detail}</p></div>)}</div></Reveal>)}</div>
