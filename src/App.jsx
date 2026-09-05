@@ -34,11 +34,11 @@ function Header() {
     <button className="home-link" onClick={() => jump('#top')}><Logo /><span>次央拉姆</span></button>
     <nav className={open ? 'is-open' : ''} aria-label="主导航">
       <button onClick={() => jump('#work')}>项目</button>
-      <button onClick={() => jump('#method')}>方法</button>
+      <button onClick={() => jump('#experience')}>经历</button>
+      <button onClick={() => jump('#capabilities')}>能力</button>
       <button onClick={() => jump('#about')}>关于</button>
-      <a href="/downloads/次央拉姆-秋招.pdf" download>简历</a>
     </nav>
-    <span className="availability"><i /> Seeking 2027 opportunities</span>
+    <div className="header-actions"><span className="availability"><i />寻找 2027 届产品机会</span><a className="header-resume" href="/downloads/次央拉姆-秋招.pdf" download>下载简历</a></div>
     <button className="menu-button" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? '关闭' : '菜单'}</button>
   </header>
 }
@@ -48,19 +48,36 @@ function Hero() {
     <Header />
     <div className="hero-layout">
       <div className="hero-copy">
-        <h1 aria-label="你好，我是次央拉姆"><span>你好，我是</span><span>次央拉姆。</span></h1>
-        <p className="hero-lead">2027 届产品经理候选人，专注可信、可验证的 AI 产品体验。</p>
-        <p className="hero-body">我独立推进三个 AI 产品从问题定义走向可验证交付：把模糊需求整理成产品判断、PRD 与交互，再用 Agent 工作流、数据和测试证据证明它真的能运行。</p>
+        <span className="eyebrow">AI PRODUCT MANAGER · 2027</span>
+        <h1 aria-label="能定义问题，也能把 AI 产品推到真实交付。">能定义问题，<br />也能把 AI 产品推到真实交付。</h1>
+        <p className="hero-lead">从业务分析、MVP 取舍、PRD 与交互，到 Agent 工作流、数据闭环、测试验收与部署。</p>
+        <p className="hero-identity">次央拉姆 · 已独立推进三个独立 AI 产品</p>
+        <div className="hero-actions"><a className="button-primary" href="#work">查看核心项目 <Arrow /></a><a className="button-secondary" href="/downloads/次央拉姆-秋招.pdf" download>下载简历 <Arrow diagonal /></a></div>
       </div>
       <figure className="hero-portrait">
-        <img src="/assets/profile-hires.webp" alt="次央拉姆高清职业照片" />
+        <img src="/assets/profile-original.png" alt="次央拉姆高清职业照片" />
         <figcaption><span>2027 届 · 数字媒体技术</span></figcaption>
       </figure>
-      <div className="hero-meta">
-        <span>产品定义</span><span>AI Native</span><span>PRD / 交互</span><span>SQL / 数据闭环</span>
-      </div>
     </div>
-    <a className="hero-scroll" href="#work">查看精选项目 <Arrow /></a>
+    <div className="proof-rail" aria-label="3 个独立 AI 产品，企业 Beta 已上线，69 项自动化测试，13 个月项目推进">
+      <div><strong>3</strong><span>个独立 AI 产品</span><small>端到端主导</small></div>
+      <div><strong>企业 Beta</strong><span>已上线</span><small>真实业务验证</small></div>
+      <div><strong>69</strong><span>项自动化测试</span><small>覆盖核心流程</small></div>
+      <div><strong>13</strong><span>个月项目推进</span><small>0→1 稳定迭代</small></div>
+    </div>
+  </section>
+}
+
+function RecruiterBrief() {
+  const items = [
+    ['01', '产品判断', '从用户、业务与约束定义 MVP，在不确定中找到可验证的最优解。', '航益智审 / NextMind'],
+    ['02', 'AI Native', '理解模型边界，设计 Agent 工作流、评测、人工确认与失败兜底。', 'Origin Brand AI'],
+    ['03', '数据闭环', '用 SQL、指标与行为分析拆解问题，用上线证据驱动迭代。', 'Sentinel / 指标体系'],
+    ['04', '交付推动', '把 PRD、流程和验收标准推进到评审、测试、发布与复盘。', '6 版方案 / 4 轮迭代'],
+  ]
+  return <section className="recruiter-brief page-shell">
+    <Reveal className="brief-heading"><span>00 / WHY ME</span><h2><small>个人优势</small>为什么值得继续看</h2><p>不是技能名词的堆叠，而是四条有真实项目支撑的交付能力。</p></Reveal>
+    <div className="brief-grid">{items.map(([number, title, text, proof]) => <Reveal as="article" className="brief-card" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p><a href="#work">关键证据 · {proof} <Arrow /></a></Reveal>)}</div>
   </section>
 }
 
@@ -87,69 +104,50 @@ function ProjectRow({ project, order, onOpen }) {
 function Work({ onOpen }) {
   return <section id="work" className="work page-shell">
     <Reveal className="section-intro">
-      <span>01 / Selected work</span>
-      <h2>精选项目</h2>
-      <p>六个案例，分别证明产品定义、AI 工作流、数据闭环、交互设计与真实交付。项目状态、入口与边界都可核对。</p>
+      <span>01 / SELECTED WORK</span>
+      <h2 aria-label="精选项目">用项目证明判断。</h2>
+      <p>六个案例覆盖企业智能审核、品牌决策、竞品情报、内容安全、AI 演示与实体产品。每个项目都说明问题、取舍、交互、数据、证据和边界。</p>
     </Reveal>
     <div className="project-list">{projects.map((project, index) => <ProjectRow key={project.id} project={project} order={index} onOpen={onOpen} />)}</div>
   </section>
 }
 
-function Method() {
-  const items = [
-    ['01', '问题定义', '从用户、业务与约束出发，写清为什么解决、为什么现在解决，以及什么不做。'],
-    ['02', '产品判断', '把范围、优先级、流程和异常状态变成可评审的 PRD 与交互方案。'],
-    ['03', 'AI Native', '区分规则与模型，设计结构化输出、人工确认、失败降级与评测证据。'],
-    ['04', '数据闭环', '用 SQL、状态、事件和指标观察产品是否真的减少成本或提升决策质量。'],
+function Experience() {
+  return <section id="experience" className="experience-section page-shell">
+    <Reveal className="section-intro"><span>02 / EXPERIENCE</span><h2>把 AI 能力讲清楚，<br />也把版本推上线。</h2><p>在 NextMind，我连接场景、功能、生成质量与商业化表达，让产品能力变得可理解、可验收。</p></Reveal>
+    <Reveal className="experience">
+      <div className="experience-label"><span>INTERNSHIP · 2026.06—至今</span><h3>实习经历</h3></div>
+      <div className="experience-main"><div className="experience-head"><div><strong>上海移品信息技术有限公司 · NextMind LLC</strong><p>AI 产品（视觉设计方向）实习生</p></div></div><div className="experience-metrics"><div><b>20+</b><span>AI 功能归类</span></div><div><b>18</b><span>业务场景梳理</span></div><div><b>V2.5</b><span>产品文档迭代</span></div><div><b>6 / 4</b><span>版本 / 迭代轮次</span></div></div><ul><li>把提示增强、需求澄清、Text2Deck、智能提纲、Context2Image、模板融合归纳为 5 类产品能力。</li><li>为投标、融资路演、高管汇报、市场研究、产品发布等场景定义目标用户、核心任务和标准页面结构。</li><li>从准确性、结构完整性、表达一致性和场景匹配度走查生成结果，用 Prompt、版本与失败案例台账跟踪 6 版方案与 4 轮迭代。</li><li>参与 Free、Plus、Pro、Enterprise 四档方案与定价页梳理，把技术能力转译为用户价值和版本差异。</li></ul></div>
+    </Reveal>
+  </section>
+}
+
+function CapabilityStack() {
+  const groups = [
+    ['01', '产品策略与定义', '需求洞察 · JTBD · MVP · Roadmap · PRD · 信息架构 · 原型 · 验收标准', '从“为什么做”到“怎么验收”，让需求具备边界、优先级与可交付性。'],
+    ['02', 'AI 产品与评测', 'Workflow · Tool Calling · Prompt · Context · Structured Output · Bad Case · Human-in-the-loop', '设计模型、规则、工具与人的分工，并用评测集、失败分类和降级策略管理不确定性。'],
+    ['03', '数据与增长验证', 'SQL · SQLite · D1 · PostgreSQL · 指标体系 · 漏斗 · 行为分析 · 实验设计', '以事件、状态和指标验证价值，定位转化阻塞与质量问题，而不是停留在主观判断。'],
+    ['04', '交付与协同', '优先级 · 评审 · 版本管理 · 测试验收 · 上线复盘 · Git · GitHub · Cloudflare', '连接设计、研发与业务，把方案推过评审、实现、测试和发布的完整链路。'],
   ]
-  return <section id="method" className="method page-shell">
-    <Reveal className="method-statement"><span>02 / Product thinking</span><h2>我不把 AI 当作<br />一个魔法按钮。</h2><p>好的 AI 产品不是更会说，而是知道信息从哪里来、模型负责什么、人在哪里判断、结果如何被复核。</p></Reveal>
-    <div className="method-list">{items.map(item => <Reveal className="method-row" key={item[0]}><span>{item[0]}</span><h3>{item[1]}</h3><p>{item[2]}</p></Reveal>)}</div>
+  return <section id="capabilities" className="capabilities page-shell">
+    <Reveal className="capability-intro"><span>03 / CAPABILITY STACK</span><h2>一套面向交付的<br />AI 产品能力栈。</h2><p>工具按工作任务组织，能力用真实项目校验。</p></Reveal>
+    <p className="sr-only">LLM / Agent 产品设计；Prompt / Context / Structured Output；AI 评测与 Bad Case；SQL / SQLite / D1 / PostgreSQL。</p>
+    <div className="capability-table">{groups.map(([number, title, tools, detail]) => <Reveal as="article" className="capability-row" key={number}><span>{number}</span><h3>{title}</h3><strong>{tools}</strong><p>{detail}</p></Reveal>)}</div>
+    <Reveal className="tool-strip"><span>常用工具</span><p><b>原型与表达</b> Figma / Axure / 墨刀 / Mermaid / XMind</p><p><b>数据与验证</b> SQL / Excel / SQLite / D1 / PostgreSQL</p><p><b>AI 与交付</b> ChatGPT / Claude / DeepSeek / Cursor / Codex / GitHub</p></Reveal>
   </section>
 }
 
 function Resources() {
   return <section className="resources page-shell">
-    <Reveal className="section-intro compact"><span>03 / Portfolio system</span><h2>文档与可点击体验</h2><p>飞书负责完整阅读，墨刀负责交互体验，GitHub 与在线产品负责证明真实落地。</p></Reveal>
+    <Reveal className="section-intro compact"><span>04 / EVIDENCE LIBRARY</span><h2>文档与可点击体验</h2><p>飞书看完整案例，墨刀体验交互，GitHub 与在线产品核对真实落地。</p></Reveal>
     <div className="resource-list">{portfolioLinks.map((link, index) => <Reveal as="a" className="resource-row" href={link.href} target="_blank" rel="noreferrer" key={link.label}><span>0{index + 1}</span><h3>{link.label}</h3><p>{link.note}</p><Arrow diagonal /></Reveal>)}</div>
   </section>
 }
 
 function About() {
-  const strengths = [
-    '三个独立 AI 产品 0→1：覆盖业务分析、MVP 取舍、Agent 工作流、原型开发、测试验收与部署验证。',
-    '能从用户痛点、业务价值和实现成本出发，判断规则、模型、Agent 与人工决策的适用边界。',
-    '采用 Spec → Agent → Test → Review → Human Acceptance 流程，用验收标准、自动化测试和证据留存约束 AI 产出。',
-    '带领 5 人跨专业团队推进 13 个月并获省级优秀结项；实习中 20 天推动内容从需求到上线，统筹 15 个版本与 8 轮评审。',
-  ]
-  const skillGroups = [
-    { label: 'PRODUCT', title: '产品与研究', skills: [
-      ['需求洞察 / 问题定义', '用户访谈、行为分析、JTBD、问题优先级'],
-      ['产品判断与 MVP', '为什么做 / 不做、范围收敛、P0 / P1 / P2'],
-      ['PRD 与交互设计', '流程图、信息架构、原型、异常状态与验收标准'],
-      ['用户与竞品研究', '用户反馈归因、竞品证据、市场机会判断'],
-    ] },
-    { label: 'AI NATIVE', title: 'AI 产品能力', skills: [
-      ['LLM / Agent 产品设计', '模型边界、Agent 角色、权限与人工决策点'],
-      ['Workflow / Tool Calling', '把模型、规则、工具与业务流程组织成闭环'],
-      ['Prompt / Context / Structured Output', '上下文管理、Schema 约束与可解析输出'],
-      ['AI 评测与 Bad Case', '评测集、指标、失败分类、重试与降级'],
-    ] },
-    { label: 'DATA & DELIVERY', title: '数据与落地', skills: [
-      ['SQL / SQLite / D1 / PostgreSQL', '数据模型、版本、审计、权限与指标追踪'],
-      ['0→1 项目推进', '需求 → PRD → 方案 → 研发 → 测试 → 上线'],
-      ['技术协作', 'React、TypeScript、API、GitHub 与测试验证'],
-    ] },
-  ]
   return <section id="about" className="about page-shell">
-    <Reveal className="about-title"><span>04 / About</span><h2>在技术、内容与用户之间，<br />把模糊问题变成可行动的产品。</h2></Reveal>
-    <Reveal className="about-profile"><img src="/assets/profile-hires.webp" alt="次央拉姆高清职业照片" /><div><p>我是次央拉姆，大连工业大学数字媒体技术专业 2027 届学生，求职方向为产品经理。已独立推进航益智审、Origin Brand AI 与 Sentinel 三个 AI 产品，覆盖问题定义、MVP 取舍、Agent 工作流、原型开发、测试验收与部署验证。我能进入 API、数据库和前端实现细节，但更重视规则、模型与人工决策的边界，以及结果能否被复核、追溯和交付。</p><dl><div><dt>工作方式</dt><dd>问题定义 → PRD → 交互 → AI / 数据闭环 → 验证复盘</dd></div><div><dt>求职方向</dt><dd>产品经理 / AI 产品方向</dd></div></dl></div></Reveal>
-    <Reveal className="experience">
-      <div className="experience-label"><span>INTERNSHIP</span><h3>实习经历</h3></div>
-      <div className="experience-main"><div className="experience-head"><div><strong>上海移品信息技术有限公司 · NextMind LLC</strong><p>AI 产品（视觉设计方向）实习生</p></div><time>2026.06—至今</time></div><ul><li>将提示增强、需求澄清、Text2Deck、智能提纲、Context2Image、模板融合等 20+ 项功能归纳为 5 类产品能力，推动《产品功能》迭代至 V2.5。</li><li>梳理投标、融资路演、高管汇报、市场研究和产品发布等 18 类场景，定义目标用户、核心任务、内容顺序与标准页面结构。</li><li>从准确性、结构完整性、表达一致性和场景匹配度走查 AI 生成结果，以 Prompt、版本和失败案例台账跟踪 6 版方案与 4 轮迭代。</li><li>参与 Free、Plus、Pro、Enterprise 四档方案及官网定价页梳理，把抽象能力转译为场景、价值主张与版本差异。</li></ul></div>
-    </Reveal>
-    <div className="strengths"><h3>个人优势</h3>{strengths.map((item, index) => <Reveal className="strength" key={item}><span>0{index + 1}</span><p>{item}</p></Reveal>)}</div>
-    <div className="capability-map"><header><span>AI NATIVE SKILL SET</span><h3>能力不是关键词，<br />而是一套交付链路。</h3><p>从洞察、判断和产品设计，到模型编排、评测、数据与上线验证。</p></header>{skillGroups.map((group, groupIndex) => <Reveal className="capability-group" key={group.label}><div className="capability-label"><span>0{groupIndex + 1} / {group.label}</span><h4>{group.title}</h4></div><div className="skill-list">{group.skills.map(([name, detail]) => <div className="skill-row" key={name}><strong>{name}</strong><p>{detail}</p></div>)}</div></Reveal>)}</div>
+    <Reveal className="about-title"><span>05 / ABOUT</span><h2>关于我</h2></Reveal>
+    <Reveal className="about-profile"><img src="/assets/profile-original.png" alt="次央拉姆高清职业照片" /><div><p>我是次央拉姆，大连工业大学数字媒体技术专业 2027 届学生，求职产品经理 / AI 产品方向。跨内容、设计与技术的经历，让我既能追问用户与业务问题，也能进入 API、数据库和前端细节；更重要的是，我会把模型不确定性转化为清晰的规则、人工决策点、评测证据与交付边界。</p><dl><div><dt>工作方式</dt><dd>问题定义 → PRD → 交互 → AI / 数据闭环 → 验证复盘</dd></div><div><dt>实践原则</dt><dd>Spec → Agent → Test → Review → Human Acceptance</dd></div><div><dt>求职方向</dt><dd>产品经理 / AI 产品方向</dd></div></dl></div></Reveal>
   </section>
 }
 
@@ -206,5 +204,5 @@ function Footer() {
 
 export default function App() {
   const [activeProject, setActiveProject] = useState(null)
-  return <><Hero /><Work onOpen={setActiveProject} /><Method /><Resources /><About /><Hobbies /><Footer /><ProjectStory project={activeProject} onClose={() => setActiveProject(null)} /></>
+  return <><Hero /><RecruiterBrief /><Work onOpen={setActiveProject} /><Experience /><CapabilityStack /><Resources /><About /><Hobbies /><Footer /><ProjectStory project={activeProject} onClose={() => setActiveProject(null)} /></>
 }

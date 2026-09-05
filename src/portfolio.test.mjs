@@ -65,7 +65,7 @@ test('Ancilla presents the verified enterprise Beta v1.3 product instead of the 
 
 test('homepage presents a formal recruiter-facing collection and Feishu resources', () => {
   const html = renderToStaticMarkup(React.createElement(App))
-  assert.match(html, /你好，我是次央拉姆/)
+  assert.match(html, /能定义问题，也能把 AI 产品推到真实交付/)
   assert.match(html, /精选项目/)
   assert.match(html, /AI Native/)
   assert.match(html, /产品判断/)
@@ -76,9 +76,32 @@ test('homepage presents a formal recruiter-facing collection and Feishu resource
   assert.equal(portfolioLinks.length >= 3, true)
 })
 
+test('homepage gives recruiters positioning, proof and core strengths before the project index', () => {
+  const html = renderToStaticMarkup(React.createElement(App))
+  assert.match(html, /AI PRODUCT MANAGER · 2027/)
+  assert.match(html, /3 个独立 AI 产品/)
+  assert.match(html, /企业 Beta 已上线/)
+  assert.match(html, /69 项自动化测试/)
+  assert.match(html, /13 个月项目推进/)
+  assert.match(html, /为什么值得继续看/)
+  assert.ok(html.indexOf('为什么值得继续看') < html.indexOf('精选项目'))
+  assert.ok(html.indexOf('下载简历') < html.indexOf('精选项目'))
+})
+
+test('homepage presents internship evidence and a modern PM capability stack before personal content', () => {
+  const html = renderToStaticMarkup(React.createElement(App))
+  assert.match(html, /产品策略与定义/)
+  assert.match(html, /AI 产品与评测/)
+  assert.match(html, /数据与增长验证/)
+  assert.match(html, /交付与协同/)
+  assert.match(html, /需求洞察 · JTBD · MVP · Roadmap · PRD · 信息架构 · 原型 · 验收标准/)
+  assert.match(html, /Workflow · Tool Calling · Prompt · Context · Structured Output · Bad Case · Human-in-the-loop/)
+  assert.ok(html.indexOf('实习经历') < html.indexOf('关于我'))
+})
+
 test('homepage makes the internship, AI-native skill stack and high-resolution portrait explicit', () => {
   const html = renderToStaticMarkup(React.createElement(App))
-  assert.match(html, /\/assets\/profile-hires\.webp/)
+  assert.match(html, /\/assets\/profile-original\.png/)
   assert.match(html, /<figcaption><span>2027 届 · 数字媒体技术<\/span><\/figcaption>/)
   assert.match(html, /上海移品信息技术有限公司/)
   assert.match(html, /NextMind Slides/)
