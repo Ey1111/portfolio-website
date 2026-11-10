@@ -112,7 +112,7 @@ const cases = [
     id: 'sentinel', index: '04', title: 'Sentinel', english: 'Evidence-bound Release QA Agent', period: '2026',
     role: 'AI 产品经理 / Agent 工作流设计', status: '可运行原型 · 已完成评测', tone: 'violet',
     statement: '让发布验收从一句目标，变成可执行、可观察、可追责的证据链。',
-    image: '/assets/sentinel-dashboard.png', imageAlt: 'Sentinel Release QA 产品界面',
+    image: '/assets/sentinel-dashboard.png', imageAlt: 'Sentinel 运行详情：逐步展示预期、实际与判定',
     capabilities: ['Agent Workflow', 'Playwright', 'Evidence', 'Release QA'],
     links: [{ label: 'GitHub', href: 'https://github.com/Ey1111/sentinel-ai-release-qa-agent' }, { label: '飞书案例', href: 'https://my.feishu.cn/docx/VYTHdXvwuo5apSx4ODncJxgenJd' }],
     media: [{ type: 'image', src: '/assets/sentinel-dashboard.png', alt: 'Sentinel 运行证据面板' }],
