@@ -72,7 +72,7 @@ function RecruiterBrief() {
   const items = [
     ['01', '产品判断', '从用户、业务与约束定义 MVP，在不确定中找到可验证的最优解。', '航益智审 / NextMind'],
     ['02', 'AI Native', '理解模型边界，设计 Agent 工作流、评测、人工确认与失败兜底。', 'Origin Brand AI'],
-    ['03', '数据闭环', '用 SQL、指标与行为分析拆解问题，用上线证据驱动迭代。', 'Sentinel / 指标体系'],
+    ['03', '数据闭环', '用评测集和对照实验定位问题，让真实数据决定下一步怎么改。', 'Sentinel / 25 个用例评测'],
     ['04', '交付推动', '把 PRD、流程和验收标准推进到评审、测试、发布与复盘。', '6 版方案 / 4 轮迭代'],
   ]
   return <section className="recruiter-brief page-shell">
@@ -116,7 +116,7 @@ function Experience() {
   return <section id="experience" className="experience-section page-shell">
     <Reveal className="section-intro"><span>02 / EXPERIENCE</span><h2>把 AI 能力讲清楚，<br />也把版本推上线。</h2><p>在 NextMind，我连接场景、功能、生成质量与商业化表达，让产品能力变得可理解、可验收。</p></Reveal>
     <Reveal className="experience">
-      <div className="experience-label"><span>INTERNSHIP · 2026.06—至今</span><h3>实习经历</h3></div>
+      <div className="experience-label"><span>INTERNSHIP · 2026.06—2026.09</span><h3>实习经历</h3></div>
       <div className="experience-main"><div className="experience-head"><div><strong>上海移品信息技术有限公司 · NextMind LLC</strong><p>AI 产品（视觉设计方向）实习生</p></div></div><div className="experience-metrics"><div><b>20+</b><span>AI 功能归类</span></div><div><b>18</b><span>业务场景梳理</span></div><div><b>V2.5</b><span>产品文档迭代</span></div><div><b>6 / 4</b><span>版本 / 迭代轮次</span></div></div><ul><li>把提示增强、需求澄清、Text2Deck、智能提纲、Context2Image、模板融合归纳为 5 类产品能力。</li><li>为投标、融资路演、高管汇报、市场研究、产品发布等场景定义目标用户、核心任务和标准页面结构。</li><li>从准确性、结构完整性、表达一致性和场景匹配度走查生成结果，用 Prompt、版本与失败案例台账跟踪 6 版方案与 4 轮迭代。</li><li>参与 Free、Plus、Pro、Enterprise 四档方案与定价页梳理，把技术能力转译为用户价值和版本差异。</li></ul></div>
     </Reveal>
   </section>
